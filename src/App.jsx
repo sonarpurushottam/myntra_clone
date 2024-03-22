@@ -1,7 +1,21 @@
-export default function App() {
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Login from "./components/Login";
+import OTPVerify from "./components/OTPVerify";
+
+const App = () => {
   return (
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
-  )
-}
+    <>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Login />} />
+          <Route path="/OTPVerify" element={<OTPVerify />} />
+          {/* <Route path="/SignIn" element={<SignIn />} />
+          <Route path="/SignUp" element={<SignUp />} />
+          <Route path="/Profile" element={<Profile />} /> */}
+        </Routes>
+      </BrowserRouter>
+    </>
+  );
+};
+
+export default App;
