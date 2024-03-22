@@ -1,5 +1,5 @@
 import { useState } from "react";
-import img from "./login.webp";
+import img from "../images/login.webp";
 import ReCAPTCHA from "react-google-recaptcha";
 import { useNavigate } from "react-router-dom";
 
